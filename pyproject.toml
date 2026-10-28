@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zumamailra-infersre_jd008"
+version = "0.1.0"
+description = "抽取数值做分布分析，用中位数绝对偏差识别推理服务 SRE 工程师·流水线并行气泡比例上的离群点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "zumamailra" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://zumamailra.github.io"
+Repository = "https://github.com/zumamailra/infersre_jd008"
+Issues = "https://github.com/zumamailra/infersre_jd008/issues"
+
+[project.scripts]
+infersre_jd008 = "infersre_jd008:main"
+
+[tool.setuptools]
+py-modules = ["infersre_jd008"]
